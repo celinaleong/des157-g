@@ -18,6 +18,12 @@ h1 {
     margin: auto;
     width: 800px;
     font-weight: 800;
+    
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #content {
@@ -34,7 +40,7 @@ h1 {
 
 }
 
-h2 {
+#content h2 {
     font-weight: 800;
     font-size: 1.3em;
     font-style: italic;
@@ -66,10 +72,25 @@ footer {
     text-align: center;
     text-transform: lowercase;
     font-style: italic;
+    /* background: rgb(255, 204, 0); */
 }
 
 footer a {
     text-decoration: none;
     color: inherit;
     padding: 0 15px;
+    
+}
+
+.displayimage {
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+
+.articletitle {
+    font-weight: 800;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
 }
