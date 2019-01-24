@@ -1,15 +1,19 @@
 body {
-    font-family: 'Muli', sans-serif;
-    background: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    background: white;
     color: #333333;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 
+}
+
+p {
+    font-family: 'Roboto';
 }
 
 div {
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 20px;
+
     background: white;
     height: 250px;
     width: 800px;
@@ -20,6 +24,8 @@ h1 {
     margin: auto;
     width: 800px;
     font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 40px;
     
 }
 
@@ -39,6 +45,9 @@ h1 a {
 
 #content section {
     flex-basis: 100%;
+    border-left: 3px dotted #ea154e;
+    padding: 0px 10px;
+
 
 }
 
@@ -46,12 +55,15 @@ h1 a {
     font-weight: 800;
     font-size: 1.3em;
     font-style: italic;
+    margin-top: 0;
+    
 }
 
 
 
 nav ol, nav ul {
-    padding-left: 15px;
+    padding-left: 0;
+    list-style-type: none;
 }
 
 nav li a, nav li {
@@ -69,12 +81,12 @@ a:hover {
     bottom: 0;
     width: 100%;
     height: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
     padding-top: 13px;
     text-align: center;
     text-transform: lowercase;
     font-style: italic;
-    background: rgb(255, 204, 0);
+    background: rgb(230, 231, 242, .7);
 }
 
 .pagefooter a {

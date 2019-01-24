@@ -18,7 +18,7 @@ function draw_circles() {
 }
 
 function draw() {
-  fill(255, 204, 0);
+  fill(230, 231, 242, 100);
   noStroke();
   rectMode(CENTER);
   center = 160;
@@ -28,10 +28,11 @@ function draw() {
       fill(255);
       rect(i, 125, 200, 200);
       if (mouseIsPressed) {
-        fill(255, 204, 0);
+        fill(230, 231, 242, 100);
         rect(i, 125, 200, 200);
         fill(255);
-        ellipse(i, 125, 200, 200);
+        rect(i, 125, 150, 150);
+        rect(i, 125, 100, 100);
       }
     }
   }
