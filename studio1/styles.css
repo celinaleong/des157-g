@@ -1,0 +1,74 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+section {
+    text-align: center;
+}
+
+label {
+    text-transform: lowercase;
+    font-size: 1.1em;
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+input {
+    width: 180px;
+    height: 20px;
+    padding: 6px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, .3);
+    border: 1px solid black;
+    font-family: 'Arial'; 
+}
+
+input:hover {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+span {
+    justify-content: center;
+    margin: 30px;
+    display: flex;
+}
+
+input[type="reset"], input[type="submit"] {
+    background-color: black;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1em;
+    width: 120px;
+    height: 35px;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+div {
+    margin: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 15px;
+    font-size: 14px;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+    margin: 10px;
+}
