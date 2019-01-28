@@ -37,7 +37,7 @@ input:hover {
     background-color: rgba(255, 255, 255, .7);
 }
 
-span {
+.buttons {
     justify-content: center;
     margin: 30px;
     display: flex;
@@ -50,6 +50,7 @@ input[type="reset"], input[type="submit"] {
     font-size: 1em;
     width: 120px;
     height: 35px;
+    border: none;
 }
 
 input[type="reset"]:hover, input[type="submit"]:hover {
