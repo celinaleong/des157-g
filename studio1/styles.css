@@ -73,3 +73,12 @@ footer a{
     color: inherit;
     margin: 10px;
 }
+
+p {
+    margin: 50px 25%;
+    text-align: center;
+    line-height: 1.4em;
+    border: 2px solid black;
+    padding: 2em;
+    
+}
