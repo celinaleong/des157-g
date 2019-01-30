@@ -6,8 +6,7 @@ body {
 h1 {
     font-family: 'Great Vibes', cursive;
     text-align: center;
-    margin-top: 70px;
-    margin-bottom: 35px;
+    margin-top: 70px auto 35px auto;
     font-size: 4em;
 }
 
@@ -28,7 +27,7 @@ input {
     width: 180px;
     height: 20px;
     padding: 5px;
-    font-size: 14px;
+    font-size: .9em;
     background-color: rgba(255, 255, 255, .3);
     border: 1px solid black;
     font-family: 'Arial'; 
@@ -58,10 +57,8 @@ input[type="reset"]:hover, input[type="submit"]:hover {
     background-color: rgba(0, 0, 0, .6);
 }
 
-
-
 div {
-    margin: 10px;
+    margin: 8px;
 }
 
 footer {
@@ -95,17 +92,17 @@ p {
 }
 
 .show {
-  position:relative;
-  left:0;
-  opacity:1;
-  transition:all .7s;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all .7s;
 }
 
 
 .hide {
-  position:relative;
-  left:-5%;
-  opacity:0;
-  transition:all .7s;
+  position: relative;
+  left: -5%;
+  opacity: 0;
+  transition: all .7s;
 }
 
