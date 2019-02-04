@@ -12,7 +12,7 @@ h1 {
     text-align: center;
     margin: 100px auto 100px auto; 
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 
@@ -35,7 +35,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     margin: auto;
     max-width: 1000px;
-    grid-row-gap: 50px;
+    grid-row-gap: 30px;
     grid-column-gap: 0px;
 }
 
