@@ -35,13 +35,7 @@ headphonesclose.addEventListener('click', function (){
 
 
 
-
-
-
-
-//var laptop = document.querySelector('#laptop');
-//var sketchbook = document.querySelector('#sketchbook');
-//var headphones = document.querySelector('#headphones');
+//
 //
 //
 //sketchbook.addEventListener('mouseover', function () {
