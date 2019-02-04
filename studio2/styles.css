@@ -3,8 +3,8 @@ body {
     background-image: url(images/background.jpg);
     background-position: center;
     background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
@@ -35,27 +35,29 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    
     max-width: 1000px;
+    grid-row-gap: 50px;
+    grid-column-gap: 0px;
 }
 
 #sketchbook {
     grid-column: 1 / 2;
     grid-row: 1;
-    width: 60%;
+    width: 50%;
 }
 
 #laptop {
     grid-column: 2/3;
     grid-row: 1;
-    width: 90%;
+    width: 80%;
+    margin-left: 0px !important;
 }
 
 #headphones {
     grid-column: 1/3;
     grid-row: 2;
     max-width: 30% !important;
-    width: 70%;     
+    width: 60%;     
 }
         
         
@@ -83,6 +85,45 @@ footer a {
     color: inherit;
 }
 
+/* overlay */
+
+#sketchbookoverlay, #laptopoverlay, #headphonesoverlay {
+    background-color: rgba(238, 173, 145, .9);
+    color: black;
+    padding: 10% 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+
+#laptopoverlay {
+    background-color: rgba(162, 215, 209, .9);
+}
+
+#headphonesoverlay {
+    background-color: rgba(215, 190, 155, .9);
+}
+
+
+#sketchbookclose, #laptopclose, #headphonesclose {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 2em;
+}
+
+.open {
+    margin-top: 8%;
+}
+
 
 /* media query */
 
@@ -94,10 +135,15 @@ footer a {
     #sketchbook, #laptop, #headphones {
         grid-column: auto;
         grid-row: auto;
+        margin: auto !important;
 	}
     
     #headphones {
         max-width: 100% !important; 
+    }
+    
+    #sketchbookoverlay, #laptopoverlay, #headphonesoverlay {
+        padding: 10% 25%;
     }
 }
 
