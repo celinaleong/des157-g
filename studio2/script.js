@@ -1,3 +1,6 @@
+console.log('reading js');
+'use strict';
+
 var sketchbook = document.querySelector('#sketchbook');
 var laptop = document.querySelector('#laptop');
 var headphones = document.querySelector('#headphones');
@@ -35,31 +38,32 @@ headphonesclose.addEventListener('click', function (){
 
 
 
-//
-//
-//
-//sketchbook.addEventListener('mouseover', function () {
-//  sketchbook.style.width='160px';
-//})
-//
-//sketchbook.addEventListener('mouseout', function () {
-//  sketchbook.style.width='180px';
-//})
-//
-//
-//laptop.addEventListener('mouseover', function () {
-//  laptop.style.width='280px';
-//})
-//
-//laptop.addEventListener('mouseout', function () {
-//  laptop.style.width='300px';
-//})
-//
-//
-//headphones.addEventListener('mouseover', function () {
-//  headphones.style.width='190px';
-//})
-//
-//headphones.addEventListener('mouseout', function () {
-//  headphones.style.width='210px';
-//})
+
+
+
+sketchbook.addEventListener('mouseover', function () {
+    sketchbook.style.opacity='.8';
+
+})
+
+sketchbook.addEventListener('mouseout', function () {
+  sketchbook.style.opacity='1';
+})
+
+
+laptop.addEventListener('mouseover', function () {
+  laptop.style.opacity='.7';
+})
+
+laptop.addEventListener('mouseout', function () {
+  laptop.style.opacity='1';
+})
+
+
+headphones.addEventListener('mouseover', function () {
+  headphones.style.opacity='.7';
+})
+
+headphones.addEventListener('mouseout', function () {
+  headphones.style.opacity='1';
+})

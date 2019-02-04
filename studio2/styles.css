@@ -87,14 +87,9 @@ footer a {
 
 
 
-
-
-
-
 /* overlay */
 
 #sketchbookoverlay, #laptopoverlay, #headphonesoverlay {
-    background-color: rgba(238, 173, 145, .9);
     color: black;
     padding: 10% 20%;
     position: absolute;
@@ -107,6 +102,11 @@ footer a {
 
 p {
     text-align: left;
+}
+
+
+#sketchbookoverlay {
+    background-color: rgba(250, 169, 139, .9);
 }
 
 
