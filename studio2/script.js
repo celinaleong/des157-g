@@ -33,37 +33,3 @@ headphones.addEventListener('click', function () {
 headphonesclose.addEventListener('click', function (){
     headphonesoverlay.style.display = 'none';
 })
-
-
-
-
-
-
-
-
-sketchbook.addEventListener('mouseover', function () {
-    sketchbook.style.opacity='.8';
-
-})
-
-sketchbook.addEventListener('mouseout', function () {
-  sketchbook.style.opacity='1';
-})
-
-
-laptop.addEventListener('mouseover', function () {
-  laptop.style.opacity='.7';
-})
-
-laptop.addEventListener('mouseout', function () {
-  laptop.style.opacity='1';
-})
-
-
-headphones.addEventListener('mouseover', function () {
-  headphones.style.opacity='.7';
-})
-
-headphones.addEventListener('mouseout', function () {
-  headphones.style.opacity='1';
-})
