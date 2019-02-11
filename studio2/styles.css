@@ -5,11 +5,10 @@
 body {
     font-family: 'Roboto Mono', monospace;
     background-image: url(images/background2.png);
-    background-repeat: none;
     background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: 100%;
 }
 
@@ -30,7 +29,6 @@ h1 {
 }
 
 
-
 #items img {
     height: 25vh;
     width: auto;
@@ -38,11 +36,10 @@ h1 {
 }
 
 
-
-#items img:hover {
+#items article img:hover {
     transform: scale(1.1);
-    
 }
+
 
 /* footer */
 
@@ -61,8 +58,6 @@ footer a {
 }
 
 
-
-
 /* overlay */
 
 #sketchbookoverlay, #laptopoverlay, #headphonesoverlay {
@@ -75,6 +70,7 @@ footer a {
     display: none;
     text-align: center;
 }
+
 
 p {
     text-align: left;
@@ -102,6 +98,7 @@ p {
     font-size: 2em;
 }
 
+
 .open {
     margin-top: 8%;
 }
@@ -112,27 +109,17 @@ p {
 @media only screen and (min-width: 769px) {
     h1 {
         padding-top: 30px;
-
     }
     
     #items{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
-    
     }
     
     #items img {
         width: 100% !important;
         height: auto !important;
         max-width: 300px;
-
 	}
-
-    
-
 }
-
-        
-        

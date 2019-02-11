@@ -5,7 +5,6 @@ var sketchbook = document.querySelector('#sketchbook');
 var laptop = document.querySelector('#laptop');
 var headphones = document.querySelector('#headphones');
 
-
 var sketchbookoverlay = document.querySelector('#sketchbookoverlay');
 var sketchbookclose = document.querySelector('#sketchbookclose');
 var laptopoverlay = document.querySelector('#laptopoverlay');
