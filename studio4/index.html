@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>It's Sushi Time!</title>
+     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+     
+
+<body>
+    <h1>It's Sushi Time!</h1>
+    <div id="belt">
+        <section id="plates" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img id="plate1" src=images/plate1.png draggable="true" ondragstart="drag(event)" width="180" alt="plate1">
+            <img id="plate2" src=images/plate2.png draggable="true" ondragstart="drag(event)" width="180" alt="plate2">
+            <img id="plate3" src=images/plate3.png draggable="true" ondragstart="drag(event)" width="180" alt="plate3">
+            <img id="plate4" src=images/plate4.png draggable="true" ondragstart="drag(event)" width="180" alt="plate4">
+            <img id="plate5" src=images/plate5.png draggable="true" ondragstart="drag(event)" width="180" alt="plate5">
+            <img id="plate6" src=images/plate6.png draggable="true" ondragstart="drag(event)" width="180" alt="plate6">
+            <img id="plate7" src=images/plate7.png draggable="true" ondragstart="drag(event)" width="180" alt="plate7">
+
+        </section>
+        </div>
+
+        <div id="eat" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <section id="eatsections">
+            </section>
+        </div>
+    
+
+        <div id="generalReset" class="button">Start Over</div>
+        <div id="done" class="button">Done</div>
+ 
+
+        <section id="receiptoverlay">
+            <section id="receiptsheet">
+                <p><b>Sushi Time Restaurant</b></p>
+                <p>Your total bill is $$$$.</p>
+                <p>Please come again!</p>
+                <div id="receiptReset" class="button">Start Over</div>
+            </section>
+            
+        </section>
+  
+
+    
+    <footer>
+        <a href="mailto:celinawleong@gmail.com">Email</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

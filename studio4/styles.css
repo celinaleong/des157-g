@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: url(images/background.png) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+h1 {
+    text-align: center;
+    color: #526150;
+    margin-top: 40px;
+}
+
+#plates {
+    width: 10000px;
+    overflow: hidden;
+
+}
+
+#plates img {
+    margin: 25px 10px;
+    width: 180px;   
+}
+
+
+#belt {
+    background-image: url(images/beltsushi.png);
+    background-position: center;
+    height: 240px;
+}
+
+
+#eat {
+    background-image: url(images/eatplate.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 306px;
+    height: 320px;
+    position: relative;
+    margin: auto;
+    top: 80px;
+    
+}
+
+#eatsections {
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+#eatsections img {
+    margin: -30px;
+}
+    
+
+/* receipt */
+
+
+#receiptoverlay {
+    display: none;
+    background-color: rgb(248,154,71, .5);
+    position: absolute;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#receiptsheet {
+    background-color: rgba(255, 255, 245, .9);
+    border: 3px double black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30%;
+    height: 80%;
+    padding: 30px;
+}
+
+
+#receiptsheet p {
+    text-align: center;
+    line-height: 1.6em;
+    margin-bottom: 2.4em;
+}
+
+.button {
+    text-align: center;
+    background-color: rgba(255, 255, 255);
+    padding: 13px;
+    width: 160px;
+    margin: 5px 30px;
+    border: 2px rgb(248,154,71) solid;
+    border-radius: 50px;
+}
+
+.button:hover {
+    background-color: rgb(248,154,71);
+    
+}
+#receiptsheet .button  {
+    margin: auto;
+}
+
+
+
+
+/* footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
+
+footer a {
+    margin: 5px;
+    text-decoration: none;
+    color: #526150;
+}
+
+
+
