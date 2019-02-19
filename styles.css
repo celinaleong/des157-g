@@ -61,12 +61,12 @@ h1 a {
 
 
 
-nav ol, nav ul {
+#content ol, #content ul {
     padding-left: 0;
     list-style-type: none;
 }
 
-nav li a, nav li {
+#content li a, #content li {
     color: grey;
     text-decoration: none;   
 }
@@ -119,3 +119,4 @@ a:hover {
 h3 {
     text-align: center;
 }
+
