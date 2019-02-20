@@ -4,11 +4,7 @@
 
 body {
     font-family: 'Roboto Mono', monospace;
-    background-image: url(images/background.png) ;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-color: #bee7f6;
 }
 
 
@@ -26,9 +22,14 @@ h1 {
 
 #plates img {
     margin: 25px 10px;
-    width: 180px;   
+    width: 180px; 
+    transition: transform .2s;
 }
 
+
+#plates img:hover {
+    transform: scale(1.15);
+}
 
 #belt {
     background-image: url(images/beltsushi.png);
@@ -46,7 +47,7 @@ h1 {
     height: 320px;
     position: relative;
     margin: auto;
-    top: 80px;
+    top: 35px;
     
 }
 
@@ -83,7 +84,8 @@ h1 {
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 30%;
+    width: 55%;
+    min-width: 300px;
     height: 80%;
     padding: 30px;
 }
@@ -103,22 +105,30 @@ h1 {
     margin: 5px 30px;
     border: 2px rgb(248,154,71) solid;
     border-radius: 50px;
+    transition: transform .1s;
 }
 
 .button:hover {
     background-color: rgb(248,154,71);
+    transform: scale(.97);
     
 }
+
 #receiptsheet .button  {
     margin: auto;
 }
 
 #control {
-    position: absolute;
-    right: 0px;
-    bottom: 30px;
-}
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 40px;
 
+}
+ 
+#control .button {
+    margin: 5px;
+}
 
 /* footer */
 
@@ -136,4 +146,39 @@ footer a {
 }
 
 
+/** media query **/ 
+
+
+@media only screen and (min-width: 769px) {
+   body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: url(images/background.png) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+    
+    #eat {
+        top: 70px;
+    }
+    
+    #control {
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 600px;
+}
+    
+    
+    #control .button {
+        margin: 7px;
+    }
+    
+    #receiptsheet {
+        width: 40%;
+    height: 80%;
+        max-width: 400px;
+    }
+}
 
