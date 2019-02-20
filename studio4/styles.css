@@ -97,7 +97,7 @@ h1 {
 
 .button {
     text-align: center;
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(255, 255, 255, .5);
     padding: 13px;
     width: 160px;
     margin: 5px 30px;
@@ -113,7 +113,11 @@ h1 {
     margin: auto;
 }
 
-
+#control {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
 
 
 /* footer */
@@ -121,7 +125,7 @@ h1 {
 footer {
     position: fixed;
     bottom: 0;
-    right: 0;
+    left: 0;
 
 }
 
