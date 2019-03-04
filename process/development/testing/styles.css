@@ -1,0 +1,45 @@
+
+div {
+    margin: auto;
+    height: 400px;
+    width: 400px;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #231040, pink);
+	background-size: 400% 400%;
+	animation: Gradient 30s ease infinite;
+
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1 {
+    font-weight: 100;
+    margin-top: 100px;
+    font-size: 1.3em;
+    opacity: .8;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: .9em;
+    opacity: .4;
+    text-align: center;
+}
