@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Wireframe</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Listen and Breathe</h1> 
+        <h2>inhale and exhale</h2> 
+    </header>
+    
+    <section id="intro">
+        <h3>Intro</h3>
+        <p>Follow the sound and visuals to calm your breathing, your mind, and to meditate. Customize your experience by changing the elements or dropping in your own media.</p>
+        <div id="enter">Enter</div>
+    </section>
+    
+    <section id="timer">
+        <h3>Timer</h3>
+        <p>How many seconds would you like to meditate?</p>
+        <div id="begin">Begin</div>
+    </section>
+    
+    
+    <div id="mySketch"></div>
+    
+    <div id="customize">Customize</div>
+    
+    
+    <section id="customizemenu">
+        <h3>Time</h3>
+        <p>time time time time </p>
+
+        <h3>Sound</h3>
+        <div id="customizesound" class="customizeradio">
+            <input type="radio" id="rainfall" name="sound" value="rainfall" checked>
+            <label for="rainfall">rainfall</label>
+            <input type="radio" id="oceanwaves" name="sound" value="oceanwaves">
+            <label for="oceanwaves">ocean waves</label>
+            <input type="radio" id="whitenoise" name="sound" value="whitenoise" checked>
+            <label for="whitenoise">white noise</label>
+            <input type="radio" id="breathingsounds" name="sound" value="breathingsounds">
+            <label for="breathingsounds">breathing sounds</label>
+        </div>
+
+        <h3>Visuals</h3>
+        <div id="customizevisuals" class="customizeradio">
+            <input type="radio" id="smooth" name="visuals" value="smooth" checked>
+            <label for="smooth">smooth</label>
+            <input type="radio" id="jagged" name="visuals" value="jagged" checked>
+            <label for="jagged">jagged</label>
+        </div>
+
+
+        <h3>Color</h3>
+        <div id="customizecolor" class="customizeradio">
+            <input type="radio" id="red" name="color" value="red" checked>
+            <label for="red">red</label>
+            <input type="radio" id="blue" name="color" value="blue" checked>
+            <label for="blue">blue</label>
+            <input type="radio" id="gray" name="color" value="gray" checked>
+            <label for="gray">gray</label>
+        </div>
+
+    
+            <div id="customizeclose">&otimes;</div>
+    </section>
+    
+    
+
+    <footer class="pagefooter">
+        <a href="mailto:celinawleong@gmail.com">Email</a>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
