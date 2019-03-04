@@ -102,7 +102,7 @@ var r = 50;
 var delta = 1;
 
 function setup() {
-    var myCanvas = createCanvas(400,400);
+    var myCanvas = createCanvas(300,300);
   //connect myCanvas to mySketch
     myCanvas.parent('mySketch');
     x = width / 2;
