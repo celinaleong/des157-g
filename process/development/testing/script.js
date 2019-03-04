@@ -34,7 +34,59 @@ timerclose.addEventListener('click', function () {
 
 
 
+/* THIS IS FOR RADIO BUTTONS
+// glenda: update using function with parameter of object selected
+"use strict";
 
+var response;
+var submit = document.querySelector('input[type="submit"]');
+var myMsg = document.querySelector('#myMsg');
+
+//querySelectorAll returns all matches into an array
+var email = document.querySelector("#email");
+var phone = document.querySelector("#phone");
+var mail = document.querySelector("#mail");
+
+//add events for the radio buttons
+email.addEventListener("click", emailSelected);
+phone.addEventListener("click", phoneSelected);
+mail.addEventListener("click", mailSelected);
+
+function emailSelected() {
+  response = 'email';
+}
+
+function phoneSelected() {
+  response = 'phone';
+}
+
+function mailSelected() {
+  response = 'mail';
+}
+
+submit.addEventListener("click", processForm);
+
+function processForm(evt) {
+  // document.querySelector('#myMsg'"').innerHTML = "you selected: " + response;
+ 
+  // targeted output (for Jamie!):
+  if (response=="email") {
+    myMsg.innerHTML = 'you got email!';
+  } else if (response=="phone") {
+    myMsg.innerHTML = 'my favorite Blondie song is \"Call Me\"';
+  } else {
+    myMsg.innerHTML = "omg...that is so old school!";
+  }
+
+  //stop the page from reloading
+  evt.preventDefault();
+}
+
+*/
+
+
+
+// AUDIO VISUALIZATION
 
 
 

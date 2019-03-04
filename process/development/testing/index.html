@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Final</title>
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +24,30 @@
     </section>
     
     <section id="timer">
-        <h3>Timer</h3>
-        <p>How many seconds would you like to meditate?</p>
+        <p>How long is your session?</p>
+        <div id="customizetimer" class="customizeradio">
+            <input type="radio" id="threemin" name="timer" value="threemin" checked>
+            <label for="threemin">3 min</label>
+            <input type="radio" id="fivemin" name="timer" value="fivemin" checked>
+            <label for="fivemin">5 min</label>
+            <input type="radio" id="tenmin" name="timer" value="tenmin" checked>
+            <label for="tenmin">10 min</label>
+            <input type="radio" id="twentymin" name="timer" value="twentymin" checked>
+            <label for="twentymin">20 min</label>
+        </div>
+        <p>What sounds do you want to hear?</p>
+        <div id="customizesound" class="customizeradio">
+            <input type="radio" id="rainfall" name="sound" value="rainfall" checked>
+            <label for="rainfall">rainfall</label>
+            <input type="radio" id="oceanwaves" name="sound" value="oceanwaves">
+            <label for="oceanwaves">ocean waves</label>
+            <input type="radio" id="whitenoise" name="sound" value="whitenoise" checked>
+            <label for="whitenoise">white noise</label>
+            <input type="radio" id="breathingsounds" name="sound" value="breathingsounds">
+            <label for="breathingsounds">breathing sounds</label>
+            <input type="radio" id="nosound" name="sound" value="nosound" checked>
+            <label for="nosound">none</label>
+        </div>
         <div id="begin">Begin</div>
     </section>
     
@@ -33,7 +55,11 @@
     <div id="mySketch"></div>
 
     
-    <div id="customize">Customize</div>
+    <div id="customize">
+        <p id="hamburger">&#9776;</p>
+        <p>Customize</p>
+    
+    </div>
     
     
     <section id="customizemenu">
@@ -59,14 +85,8 @@
             <label for="whitenoise">white noise</label>
             <input type="radio" id="breathingsounds" name="sound" value="breathingsounds">
             <label for="breathingsounds">breathing sounds</label>
-        </div>
-
-        <h3>Visuals</h3>
-        <div id="customizevisuals" class="customizeradio">
-            <input type="radio" id="smooth" name="visuals" value="smooth" checked>
-            <label for="smooth">smooth</label>
-            <input type="radio" id="jagged" name="visuals" value="jagged" checked>
-            <label for="jagged">jagged</label>
+            <input type="radio" id="nosound" name="sound" value="nosound" checked>
+            <label for="nosound">none</label>
         </div>
 
 
