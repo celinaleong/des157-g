@@ -29,6 +29,7 @@ customizeclose.addEventListener('click', function (){
 enter.addEventListener('click', function () {
     intro.style.display='none';
     settings.style.display='block';
+    
 })
 
 settingsclose.addEventListener('click', function () {

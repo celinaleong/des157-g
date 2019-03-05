@@ -130,7 +130,8 @@ h3 {
 
 #customizemenu{
     height: 100%;
-    background: rgb(0,0,0,0.7);
+    background: black;
+    opacity: .7;
     padding: 50px 50px;
     width: 300px;
     position: fixed;
@@ -162,6 +163,11 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     border: 0;
+}
+
+.customizeradio {
+    line-height: 1em;
+    
 }
 
 label {
@@ -227,7 +233,7 @@ input:checked {
 }
 
 .pagefooter a {
-    opacity: .3;
+    opacity: .5;
     text-decoration: none;
     color: inherit;
     padding: 0 15px;
