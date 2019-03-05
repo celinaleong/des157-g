@@ -23,7 +23,7 @@ body {
     opacity: .8;
     line-height: 1.3em;
 	color: #fff;
-	background: linear-gradient(-45deg, #231040, pink);
+	background: linear-gradient(-45deg, #2b1138, #1c235b);
 	background-size: 400% 400%;
 	animation: Gradient 30s ease infinite;
 
@@ -58,6 +58,7 @@ h2 {
     font-weight: 200;
     font-size: 1em;
     text-align: center;
+    display: none;
 }
 
 h3 {
@@ -66,7 +67,7 @@ h3 {
 }
 
 
-/* beginning site, intro/timer */ 
+/* beginning site, intro/settings */ 
 
 #intro {
     padding-top: 10px;
@@ -75,9 +76,10 @@ h3 {
     margin: auto;
     display: block;
     text-align: center;
+
 }
 
-#timer {
+#settings {
     padding-top: 10px;
     width: 60%;
     justify-content: center;
@@ -98,6 +100,8 @@ h3 {
 
 #enter:hover, #begin:hover {
     background: rgb(255,255,255,.2);
+    transition: .3s;
+    transform: scale(1.05);
 }
 
 
@@ -106,28 +110,34 @@ h3 {
 
 #customize {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor:pointer;
-    transition: 0.5s;
+    top: 16px;
+    left: 30px;
+    cursor:pointer;  
     display: flex;
+    
+}
+
+#customize:hover {
+    color: lightgray;
+    transition: .3s;
 }
 
 #hamburger {
-    margin-right: 5px;
+    margin-right: 10px;
 
 }
 
 
 #customizemenu{
-    width: 88%;
-    height: 100vh;
-    background: rgb(0,0,0,0.8);
-    padding: 8% 14%;
-    position: absolute;
+    height: 100%;
+    background: rgb(0,0,0,0.7);
+    padding: 50px 50px;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    left: 0;
-    display: none;
+    left: -300px;
+    transition: 0.5s;
 }
 
 #customizeclose {
@@ -136,15 +146,22 @@ h3 {
     right: 1.5em;
     font-size: 2em;
     cursor: pointer;
+    
+}
+
+#customizeclose:hover {
+    color: lightgray;
+    transition: .3s;
+    transform: scale(1.2);
 }
 
 /* customizing sections */
 
 .customizeradio {
-  display: flex;
+    display: flex;
     flex-direction: column;
-  align-items: flex-start;
-  border:0;
+    align-items: flex-start;
+    border: 0;
 }
 
 label {
@@ -153,9 +170,13 @@ label {
     left: 1.3em;
     margin-right: 1em;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-
+label:hover {
+    color: lightgray;
+    transition: .3s;
+}
 
 input[type="radio"]{
   /* vendor prefixes required...but not best solution in the big picture of standards */
@@ -206,8 +227,31 @@ input:checked {
 }
 
 .pagefooter a {
+    opacity: .3;
     text-decoration: none;
     color: inherit;
     padding: 0 15px;
-    
 }
+
+.pagefooter a:hover {
+    opacity: 1;
+    transition: .4s;
+}
+
+@media only screen and (min-width: 769px) {
+
+    #settings .customizeradio {
+        margin-left: 30%;
+        display: grid;
+        border: 0;
+    }
+    
+    #settings label {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+}
+
+
+    

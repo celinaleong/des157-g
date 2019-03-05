@@ -9,27 +9,32 @@ var customize = document.querySelector('#customize');
 var customizeclose = document.querySelector('#customizeclose');
 var customizemenu = document.querySelector('#customizemenu');
 var enter = document.querySelector('#enter');
-var timer = document.querySelector('#timer');
-var timerclose = document.querySelector('#begin');
+var settings = document.querySelector('#settings');
+var settingsclose = document.querySelector('#begin');
 var mySketch = document.querySelector('#mySketch');
+var intro = document.querySelector('#intro');
+var h2 = document.querySelector('h2'); 
 
 
 
 customize.addEventListener('click', function () {
-    customizemenu.style.display='block';
+    customizemenu.style.left = '0';
+    
 })
 customizeclose.addEventListener('click', function (){
-    customizemenu.style.display = 'none';
+    customizemenu.style.left = '-300px';
+    
 })
 
 enter.addEventListener('click', function () {
     intro.style.display='none';
-    timer.style.display='block';
+    settings.style.display='block';
 })
 
-timerclose.addEventListener('click', function () {
-    timer.style.display='none';
+settingsclose.addEventListener('click', function () {
+    settings.style.display='none';
     mySketch.style.display='block';
+    h2.style.display='block';
 })
 
 
