@@ -1,0 +1,11 @@
+/* interactive wireframe styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+#mySketch {
+    background: linear-gradient(-45deg, #2b1138, #1c235b);
+	background-size: 400% 400%;
+	animation: Gradient 30s ease infinite;
+}
