@@ -18,6 +18,7 @@ var customizeclose = document.querySelector('#customizeclose');
 var customizemenu = document.querySelector('#customizemenu');
 var enter = document.querySelector('#enter');
 var begin = document.querySelector('#begin');
+var togglebutton = document.querySelector('#togglebutton');
 var settings = document.querySelector('#settings');
 var settingsclose = document.querySelector('#begin');
 var mySketch = document.querySelector('#mySketch');
@@ -104,6 +105,10 @@ bluecolor.addEventListener('click', function() {
     customize.style.color = 'black';
     enter.style.borderColor = 'black';
     begin.style.borderColor = 'black';
+    togglebutton.style.color = 'black';
+    togglebutton.style.borderColor = 'black';
+    
+    
 });
 
 var pinkcolor = document.querySelector('#pink'); 
@@ -118,20 +123,26 @@ pinkcolor.addEventListener('click', function() {
     customize.style.color = 'black';
     enter.style.borderColor = 'black';
     begin.style.borderColor = 'black';
+    togglebutton.style.color = 'black';
+    togglebutton.style.borderColor = 'black';
 });
 
 var darkcolor = document.querySelector('#dark'); 
 darkcolor.addEventListener('click', function() {
     colorclick = "dark";
-    body.style.background ='#2b1138';
-    customizemenu.style.opacity='.8';
-    intro.style.color = 'white';
-    h1.style.color = 'white';
-    h2.style.color = 'white';
-    settings.style.color = 'white';
-    customize.style.color = 'white';
-    enter.style.borderColor = 'white';
-    begin.style.borderColor = 'white';
+    body.style.background = null;
+    //body.style.background ='#2b1138';
+    customizemenu.style.opacity= null;
+    intro.style.color = null;
+    h1.style.color = null;
+    h2.style.color = null;
+    settings.style.color = null;
+    customize.style.color = null;
+    enter.style.borderColor = null;
+    begin.style.borderColor = null;
+    togglebutton.style.color = null;
+    togglebutton.style.borderColor = null;
+    
 });
 
    
