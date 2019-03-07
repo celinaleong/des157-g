@@ -16,6 +16,23 @@
     display: none;
 }
 
+#togglebutton {
+    border: 1px solid white;
+    border-radius: 20em;
+    width: 80px;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    cursor:pointer;
+    display: none;
+}
+
+#togglebutton:hover {
+    background: rgb(255,255,255,.2);
+    transition: .3s;
+    transform: scale(1.05);
+}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +40,7 @@ body {
     opacity: .8;
     line-height: 1.3em;
 	color: #fff;
-	background: linear-gradient(-45deg, #2b1138, #1c235b);
+	background: linear-gradient(-45deg, #2b1138, #115DA8);
 	background-size: 400% 400%;
 	animation: Gradient 30s ease infinite;
 
@@ -52,6 +69,12 @@ h1 {
     margin-top: 100px;
     font-size: 1.4em;
     text-align: center;
+    cursor: pointer;
+}
+h1:hover {
+    transition: .3s;
+    color: lightgray;
+
 }
 
 h2 {
@@ -70,7 +93,7 @@ h3 {
 /* beginning site, intro/settings */ 
 
 #intro {
-    padding-top: 10px;
+    padding-top: 30%;
     width: 60%;
     justify-content: center;
     margin: auto;
@@ -79,8 +102,9 @@ h3 {
 
 }
 
+
 #settings {
-    padding-top: 10px;
+    padding-top: 15%;
     width: 60%;
     justify-content: center;
     margin: auto;
@@ -93,7 +117,7 @@ h3 {
     border-radius: 20em;
     width: 80px;
     padding: 5px;
-    margin: 40px auto;
+    margin: 20% auto;
     text-align: center;
     cursor:pointer;
 }
@@ -113,7 +137,8 @@ h3 {
     top: 16px;
     left: 30px;
     cursor:pointer;  
-    display: flex;
+    display: none;
+    transition: .3s;
     
 }
 
@@ -122,10 +147,12 @@ h3 {
     transition: .3s;
 }
 
+/*
 #hamburger {
     margin-right: 10px;
 
 }
+*/
 
 
 #customizemenu{
@@ -139,6 +166,7 @@ h3 {
     top: 0;
     left: -300px;
     transition: 0.5s;
+    font-weight:200;
 }
 
 #customizeclose {

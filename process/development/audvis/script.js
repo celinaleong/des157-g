@@ -23,7 +23,7 @@ function toggleSong() {
 function setup() {
     createCanvas(700, 700);
     angleMode(DEGREES);
-    song = loadSound('ariana.mp3', loaded);
+    song = loadSound('seaside.mp3', loaded);
     button = createButton('play');
     button.mousePressed(toggleSong);
     slider = createSlider(0,1,.5,.01);
@@ -36,6 +36,7 @@ function setup() {
 function loaded() {
     console.log('loaded');
 }
+
 
 function draw() {
     background(43,17,56);

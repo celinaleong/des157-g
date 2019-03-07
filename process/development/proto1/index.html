@@ -9,18 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <h1>Listen and Breathe</h1> 
+        <h1 id="generalReset">Listen and Breathe</h1> 
         <h2>inhale and exhale</h2> 
     </header>
             
     <section id="intro">
         <p>Follow the sound and visuals to calm your breathing, your mind, and to meditate. Customize your experience by changing the elements or dropping in your own media.</p>
-        <div id="enter">Enter</div>
+        <div id="enter" class="navbutton">Enter</div>
     </section>
     
     <section id="settings">
@@ -43,23 +45,24 @@
             <label for="rainfall_intro">rainfall</label>
             <input type="radio" id="oceanwaves_intro" name="sound" value="oceanwaves">
             <label for="oceanwaves_intro">ocean waves</label>
+            <input type="radio" id="summermeadow_intro" name="sound" value="summermeadow">
+            <label for="summermeadow_intro">summer meadow</label>
+            
             <input type="radio" id="whitenoise_intro" name="sound" value="whitenoise" checked>
             <label for="whitenoise_intro">white noise</label>
-            <input type="radio" id="breathingsounds_intro" name="sound" value="breathingsounds">
-            <label for="breathingsounds_intro">breathing sounds</label>
-            <input type="radio" id="none_intro" name="sound" value="none" checked>
-            <label for="none_intro">none</label>
+            
+            <input type="radio" id="nosound_intro" name="sound" value="nosound" checked>
+            <label for="nosound_intro">none</label>
         </div>
-        <div id="begin">Begin</div>
+        <div id="begin" class="navbutton">Begin</div>
     </section>
     
     
     <div id="mySketch"></div>
-
+    <div id="togglebutton">play</div>
     
     <div id="customize">
-        <p id="hamburger">&#9776;</p>
-        <p>Customize</p>
+        <p>&#9776; &nbsp; Customize</p>
     
     </div>
     
@@ -81,14 +84,14 @@
 
         <h3>Sound</h3>
         <div id="customizesound" class="customizeradio">
-            <input type="radio" id="rainfall" name="sound" value="rainfall" checked>
+            <input type="radio" type="radio" id="rainfall" name="sound" value="rainfall" checked>
             <label for="rainfall">rainfall</label>
             <input type="radio" id="oceanwaves" name="sound" value="oceanwaves">
             <label for="oceanwaves">ocean waves</label>
+            <input type="radio" id="summermeadow" name="sound" value="summermeadow">
+            <label for="summermeadow">summer meadow</label>
             <input type="radio" id="whitenoise" name="sound" value="whitenoise" checked>
             <label for="whitenoise">white noise</label>
-            <input type="radio" id="breathingsounds" name="sound" value="breathingsounds">
-            <label for="breathingsounds">breathing sounds</label>
             <input type="radio" id="nosound" name="sound" value="nosound" checked>
             <label for="nosound">none</label>
         </div>
@@ -96,14 +99,15 @@
 
         <h3>Color</h3>
         <div id="customizecolor" class="customizeradio">
-            <input type="radio" id="red" name="color" value="red" checked>
-            <label for="red">red</label>
+            <input type="radio" id="dark" name="color" value="dark" checked>
+            <label for="dark">dark</label>
             
             <input type="radio" id="blue" name="color" value="blue" checked>
             <label for="blue">blue</label>
             
-            <input type="radio" id="gray" name="color" value="gray" checked>
-            <label for="gray">gray</label>
+            <input type="radio" id="pink" name="color" value="pink" checked>
+            <label for="pink">pink</label>
+
         </div>
 
     
@@ -117,7 +121,7 @@
         <a href="https://validator.w3.org/check?uri=referer" target="_blank">Valid HTML 5</a>
         <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a>
     </footer>
-    <script src="script.js"></script>
+    <script src="scriptmusic.js"></script>
 
 </body>
 

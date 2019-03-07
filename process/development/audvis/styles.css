@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+     background: linear-gradient(-45deg, #2b1138, #1c235b);
+	background-size: 400% 400%;
+	animation: Gradient 30s ease infinite;
+}
 #mySketch {
+    background: red;
+/*
     background: linear-gradient(-45deg, #2b1138, #1c235b);
 	background-size: 400% 400%;
 	animation: Gradient 30s ease infinite;
+*/
 }

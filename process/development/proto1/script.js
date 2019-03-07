@@ -9,11 +9,13 @@ var customize = document.querySelector('#customize');
 var customizeclose = document.querySelector('#customizeclose');
 var customizemenu = document.querySelector('#customizemenu');
 var enter = document.querySelector('#enter');
+var begin = document.querySelector('#begin');
 var settings = document.querySelector('#settings');
 var settingsclose = document.querySelector('#begin');
 var mySketch = document.querySelector('#mySketch');
 var intro = document.querySelector('#intro');
 var h2 = document.querySelector('h2'); 
+var h1 = document.querySelector('h1'); 
 
 
 
@@ -39,6 +41,46 @@ settingsclose.addEventListener('click', function () {
 })
 
 
+
+// color change
+
+
+var body = document.querySelector('body'); 
+
+
+
+var colorclick;
+
+var bluecolor = document.querySelector('#blue'); 
+bluecolor.addEventListener('click', function() {
+    colorclick = "blue";
+    body.style.background ='#B4D8E7';
+    customizemenu.style.opacity='.8';
+    intro.style.color = 'black';
+    h1.style.color = 'black';
+    h2.style.color = 'black';
+    settings.style.color = 'black';
+    customize.style.color = 'black';
+    enter.style.borderColor = 'black';
+    begin.style.borderColor = 'black';
+});
+
+var pinkcolor = document.querySelector('#pink'); 
+pinkcolor.addEventListener('click', function() {
+    colorclick = "pink";
+    body.style.background ='#FFE3EB';
+    customizemenu.style.opacity='.8';
+    intro.style.color = 'black';
+    h1.style.color = 'black';
+    h2.style.color = 'black';
+    settings.style.color = 'black';
+    customize.style.color = 'black';
+    enter.style.borderColor = 'black';
+    begin.style.borderColor = 'black';
+});
+
+
+   
 
 /* THIS IS FOR RADIO BUTTONS
 // glenda: update using function with parameter of object selected
@@ -75,14 +117,6 @@ submit.addEventListener("click", processForm);
 function processForm(evt) {
   // document.querySelector('#myMsg'"').innerHTML = "you selected: " + response;
  
-  // targeted output (for Jamie!):
-  if (response=="email") {
-    myMsg.innerHTML = 'you got email!';
-  } else if (response=="phone") {
-    myMsg.innerHTML = 'my favorite Blondie song is \"Call Me\"';
-  } else {
-    myMsg.innerHTML = "omg...that is so old school!";
-  }
 
   //stop the page from reloading
   evt.preventDefault();
@@ -93,9 +127,6 @@ function processForm(evt) {
 
 
 // AUDIO VISUALIZATION
-
-
-
 
 
 
@@ -116,14 +147,24 @@ function setup() {
 }
 
 
-
 function draw() {
     clear()
-  
-  // Draw a circle
-    stroke(235,228,247);
-    strokeWeight(.4);
-    fill(255,255,255,20);
+    
+      // Draw a circle
+    if (colorclick == "blue") {
+        stroke(25,25,112);
+        strokeWeight(.4);
+        fill(65,105,225,120);
+    } else if (colorclick == "pink") {
+         stroke(232, 88, 88);
+        strokeWeight(.4);
+        fill(255, 169, 169,120);   
+    } else {
+         stroke(235,228,247);
+        strokeWeight(.4);
+        fill(255,255,255,20);   
+    }
+
     
 
     if (r >= 180) {
@@ -138,4 +179,9 @@ function draw() {
 
 }
  
+
+
+// audio code
+
+
 
