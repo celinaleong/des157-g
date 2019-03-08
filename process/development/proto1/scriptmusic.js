@@ -25,6 +25,9 @@ var mySketch = document.querySelector('#mySketch');
 var intro = document.querySelector('#intro');
 var h2 = document.querySelector('h2'); 
 var h1 = document.querySelector('h1'); 
+var infodescriptionoverlay = document.querySelector('#infodescription-overlay'); 
+var info = document.querySelector('#info'); 
+var infoclose = document.querySelector('#infoclose'); 
 
 
 
@@ -40,8 +43,18 @@ customizeclose.addEventListener('click', function (){
 enter.addEventListener('click', function () {
     intro.style.display='none';
     settings.style.display='block';
-    
 })
+
+info.addEventListener('click', function () {
+    infodescriptionoverlay.style.display='block';
+})
+
+
+infoclose.addEventListener('click', function () {
+    infodescriptionoverlay.style.display='none';
+})
+
+
 
 settingsclose.addEventListener('click', function () {
     settings.style.display='none';
@@ -107,7 +120,7 @@ bluecolor.addEventListener('click', function() {
     begin.style.borderColor = 'black';
     togglebutton.style.color = 'black';
     togglebutton.style.borderColor = 'black';
-    
+    info.style.color = 'black';
     
 });
 
@@ -125,6 +138,7 @@ pinkcolor.addEventListener('click', function() {
     begin.style.borderColor = 'black';
     togglebutton.style.color = 'black';
     togglebutton.style.borderColor = 'black';
+    info.style.color = 'black';
 });
 
 var darkcolor = document.querySelector('#dark'); 
@@ -142,7 +156,7 @@ darkcolor.addEventListener('click', function() {
     begin.style.borderColor = null;
     togglebutton.style.color = null;
     togglebutton.style.borderColor = null;
-    
+    info.style.color = null;
 });
 
    

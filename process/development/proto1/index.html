@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Final</title>
+    <title>Breathly</title>
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
@@ -21,7 +21,7 @@
     </header>
             
     <section id="intro">
-        <p>Follow the sound and visuals to calm your breathing, your mind, and to meditate. Customize your experience by changing the elements or dropping in your own media.</p>
+        <p>Follow the sound and visuals to slow your breathing, calm your mind, and meditate. Customize your experience by changing the elements or dropping in your own media.</p>
         <div id="enter" class="navbutton">Enter</div>
     </section>
     
@@ -61,6 +61,19 @@
     <div id="mySketch"></div>
     <div id="togglebutton">Toggle</div>
     
+    
+    <div id="info">
+        <p>&#9432;</p>
+    </div>
+    <div id="infodescription-overlay">
+        <div id="infoclose">&times;</div>
+        <div id="infodescription">
+            <h3>Breathly</h3>
+            <p>Breathly is an application that provides a meditative escape, especially for those facing stress and anxiety. Our everyday life is full of stressors, and we offer a safe space to transcend them. With meditative music such as sounds from nature or white noise to drown out the chaos of your surroundings, we invite you to breathe with us. Slow your breath, calm your mind, and meditate.</p>
+        </div>
+    
+    </div>
+    
     <div id="customize">
         <p>&#9776; &nbsp; Customize</p>
     
@@ -84,7 +97,7 @@
 
         <h3>Sound</h3>
         <div id="customizesound" class="customizeradio">
-            <input type="radio" type="radio" id="rainfall" name="sound" value="rainfall" checked>
+            <input type="radio" id="rainfall" name="sound" value="rainfall" checked>
             <label for="rainfall">rainfall</label>
             <input type="radio" id="oceanwaves" name="sound" value="oceanwaves">
             <label for="oceanwaves">ocean waves</label>

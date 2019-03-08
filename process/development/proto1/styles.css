@@ -34,9 +34,60 @@
 }
 
 
+#info {
+    position: fixed;
+    top: 16px;
+    right: 30px;
+    cursor:pointer; 
+    font-size: 1em;
+    color: white;
+}
+
+#info:hover {
+    color: lightgray;
+    transition: .3s;
+}
+
+
+#infodescription-overlay {
+    background: black;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 75%;
+    min-width: 300px;
+    height: 65%;
+    padding: 8%;
+    line-height: 1.6em;
+    display: none;
+}
+
+
+
+#infoclose {
+    text-align: right;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+
+#infoclose:hover {
+    color: lightgray;
+    transition: .3s;
+}
+
+#infodescription h3 {
+    text-align: center;
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     opacity: .8;
     line-height: 1.3em;
 	color: #fff;
@@ -65,7 +116,7 @@ header {
 }
 
 h1 {
-    font-weight: 200;
+    font-weight: 300;
     margin-top: 100px;
     font-size: 1.4em;
     text-align: center;
@@ -78,7 +129,7 @@ h1:hover {
 }
 
 h2 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1em;
     text-align: center;
     display: none;
@@ -88,6 +139,7 @@ h3 {
     font-weight: 400;
     font-size: 1em;
 }
+
 
 
 /* beginning site, intro/settings */ 
@@ -101,6 +153,8 @@ h3 {
     text-align: center;
 
 }
+
+
 
 
 #settings {
@@ -133,7 +187,7 @@ h3 {
 /* customize menu */
 
 #customize {
-    position: absolute;
+    position: fixed;
     top: 16px;
     left: 30px;
     cursor:pointer;  
