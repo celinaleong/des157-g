@@ -1,0 +1,357 @@
+/* interactive wireframe styles.css */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* main site */
+
+
+#mySketch {
+    margin: 120px auto;
+    height: 300px;
+    width: 300px;
+    display: none;
+}
+
+#togglebutton {
+    border: 1px solid white;
+    border-radius: 20em;
+    width: 80px;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    cursor:pointer;
+    display: none;
+}
+
+#togglebutton:hover {
+    background: rgb(255,255,255,.2);
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+
+#info {
+    position: fixed;
+    top: 16px;
+    right: 30px;
+    cursor:pointer; 
+    font-size: 1em;
+    color: white;
+}
+
+#info:hover {
+    color: lightgray;
+    transition: .3s;
+}
+
+
+#infodescription-overlay {
+    background: black;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 75%;
+    min-width: 300px;
+    height: 60%;
+    padding: 8%;
+    line-height: 1.6em;
+    display: none;
+}
+
+
+
+#infoclose {
+    text-align: right;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+
+#infoclose:hover {
+    color: lightgray;
+    transition: .3s;
+}
+
+#infodescription h3 {
+    text-align: center;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    opacity: .8;
+    line-height: 1.3em;
+	color: #fff;
+	background: linear-gradient(-45deg, #2b1138, #115DA8);
+	background-size: 400% 400%;
+	animation: Gradient 30s ease infinite;
+
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+header {
+    margin: auto;
+    justify-content: center;
+    display: block;
+}
+
+h1 {
+    font-weight: 300;
+    margin-top: 100px;
+    font-size: 1.4em;
+    text-align: center;
+    cursor: pointer;
+}
+h1:hover {
+    transition: .3s;
+    color: lightgray;
+
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+    display: none;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+
+/* beginning site, intro/settings */ 
+
+#intro {
+    padding-top: 8.5em;
+    width: 60%;
+    max-width: 500px;
+    justify-content: center;
+    margin: auto;
+    display: block;
+    text-align: center;
+
+}
+
+
+
+
+#settings {
+    padding-top: 3em;
+    width: 50%;
+    justify-content: center;
+    margin: auto;
+    display: none;
+    text-align: center;
+}
+
+#enter, #begin {
+    border: 1px solid white;
+    border-radius: 20em;
+    width: 80px;
+    padding: 5px;
+    margin: 7em auto;
+    text-align: center;
+    cursor:pointer;
+}
+
+#enter:hover, #begin:hover {
+    background: rgb(255,255,255,.2);
+    transition: .3s;
+    transform: scale(1.05);
+}
+
+
+
+/* customize menu */
+
+#customize {
+    position: fixed;
+    top: 16px;
+    left: 30px;
+    cursor:pointer;  
+    display: none;
+    transition: .3s;
+    
+}
+
+#customize:hover {
+    color: lightgray;
+    transition: .3s;
+}
+
+/*
+#hamburger {
+    margin-right: 10px;
+
+}
+*/
+
+
+#customizemenu{
+    height: 100%;
+    background: black;
+    opacity: .7;
+    padding: 50px 50px;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -300px;
+    transition: 0.5s;
+    font-weight:200;
+}
+
+#customizeclose {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+
+#customizeclose:hover {
+    color: lightgray;
+    transition: .3s;
+    transform: scale(1.2);
+}
+
+/* customizing sections */
+
+.customizeradio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+}
+
+.customizeradio {
+    line-height: 1em;
+    
+}
+
+label {
+    position:relative;
+    top:-1em;
+    left: 1.3em;
+    margin-right: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+label:hover {
+    color: lightgray;
+    transition: .3s;
+}
+
+input[type="radio"]{
+  /* vendor prefixes required...but not best solution in the big picture of standards */
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid white;
+    opacity: .5;
+    transition: 0.2s all linear;
+}
+
+input:checked {
+  background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.pagefooter {
+    position: fixed;
+    font-size: .9em;
+    bottom: 0;
+    text-align: right;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 13px;
+    text-transform: lowercase;
+}
+
+.pagefooter a {
+    opacity: .5;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 15px;
+}
+
+.pagefooter a:hover {
+    opacity: 1;
+    transition: .4s;
+}
+
+@media only screen and (min-width: 769px) {
+
+    #settings .customizeradio {
+        margin-left: 25%;
+        display: grid;
+        border: 0;
+    }
+    
+    #settings label {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+
+    #infodescription-overlay {
+        width: 75%;
+        max-width: 700px;
+        height: 40%;
+        padding: 3%;
+        line-height: 1.6em;
+        display: none;
+    }
+
+    
+}
+
+
+    
