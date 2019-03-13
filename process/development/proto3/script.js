@@ -63,15 +63,32 @@ settingsclose.addEventListener('click', function () {
     mySketch.style.display='block';
     h2.style.display='block';
     button.style.display='block';
-    countDown(6,'status');
+    countDown(duration,'status');
     music();
-    console.log(songplayed);
-    /// why does this not work if not click audio type
-    
-    
+    console.log(duration);
+    /// why does this not work if not click audio type  
 })
 
-var timeMeditate;
+
+
+
+var duration;
+
+
+var threemin_intro = document.querySelector('#threemin_intro'); 
+threemin_intro.addEventListener('click', function() {
+    duration = .1*60; })
+var fivemin_intro = document.querySelector('#fivemin_intro'); 
+fivemin_intro.addEventListener('click', function() {
+    duration = 5*60; })
+var tenmin_intro = document.querySelector('#tenmin_intro'); 
+tenmin_intro.addEventListener('click', function() {
+    duration = 10*60; })
+var twentymin_intro = document.querySelector('#twentymin_intro'); 
+twentymin_intro.addEventListener('click', function() {
+    duration = 20*60; })
+
+
 
 
 
@@ -112,8 +129,6 @@ function music() {
 
 
 var body = document.querySelector('body'); 
-
-
 
 var colorclick;
 
@@ -375,10 +390,16 @@ function draw() {
 
 function countDown(secs,elem) {
 	var element = document.getElementById(elem);
-	element.innerHTML = "Time left "+ secs + " seconds";
+    var minutes = Math.ceil(secs / 60);
+    console.log(secs);
+	element.innerHTML = "time left: "+ minutes + " min";
 	if(secs < 1) {
 		clearTimeout(timer);
-		element.innerHTML = 'Done';
+		element.innerHTML = 'Done! Thank you for breathing with us.';
+        statusoverlay.classList.add('statusdone');
+        restartDone.style.display = 'block';
+        songplayed.stop();
+        return;
 	}
 	secs--;
 	var timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
@@ -387,6 +408,14 @@ function countDown(secs,elem) {
 }
 
 var status = document.querySelector('#status');
+var statusoverlay = document.querySelector('#statusoverlay');
+
+
+var restartDone = document.querySelector('#restartDone');
+restartDone.addEventListener('click', function () {
+    window.location.reload();
+})
+
 
 
 //countDown(6,'status');

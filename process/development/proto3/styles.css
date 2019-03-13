@@ -16,6 +16,7 @@
     display: none;
 }
 
+
 #togglebutton {
     border: 1px solid white;
     border-radius: 20em;
@@ -167,7 +168,7 @@ h3 {
     text-align: center;
 }
 
-#enter, #begin {
+#enter, #begin, #restartDone {
     border: 1px solid white;
     border-radius: 20em;
     width: 80px;
@@ -177,7 +178,7 @@ h3 {
     cursor:pointer;
 }
 
-#enter:hover, #begin:hover {
+#enter:hover, #begin:hover, , #restart:hover {
     background: rgb(255,255,255,.2);
     transition: .3s;
     transform: scale(1.05);
@@ -292,10 +293,28 @@ input:checked {
 /* status */
 #status {
     margin-top: 30px;
-    
+    text-align: center;
+    display: block;
 }
 
 
+.statusdone {
+    color: white;
+    z-index: 10;
+    margin: 0;
+    padding: 20em 20%;
+    position: absolute;
+    width: 100%;
+    background: rgb(0,0,0,.8);
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+}
+
+#restartDone {
+    display: none;
+}
 
 
 
