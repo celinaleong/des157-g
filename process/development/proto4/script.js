@@ -65,8 +65,8 @@ settingsclose.addEventListener('click', function () {
     button.style.display='block';
     countDown(duration,'status');
     music();
-    console.log(duration);
-    /// why does this not work if not click audio type  
+    //console.log(duration);
+    
 })
 
 
@@ -87,6 +87,36 @@ tenmin_intro.addEventListener('click', function() {
 var twentymin_intro = document.querySelector('#twentymin_intro'); 
 twentymin_intro.addEventListener('click', function() {
     duration = 20*60; })
+
+
+
+// doing the change time
+
+
+var threemin = document.querySelector('#threemin'); 
+threemin.addEventListener('click', function() {
+    duration = .33*60; 
+    countDown(duration,'status');
+
+})
+var fivemin = document.querySelector('#fivemin'); 
+fivemin.addEventListener('click', function() {
+    duration = 5*60; 
+    countDown(duration,'status');
+
+})
+var tenmin = document.querySelector('#tenmin'); 
+tenmin.addEventListener('click', function() {
+    duration = 10*60; 
+    countDown(duration,'status');
+
+})
+var twentymin = document.querySelector('#twentymin'); 
+twentymin.addEventListener('click', function() {
+    duration = 20*60; 
+    countDown(duration,'status');
+
+})
 
 
 
@@ -203,6 +233,8 @@ blackcolor.addEventListener('click', function() {
 });
 
    
+
+
 
 /* THIS IS FOR RADIO BUTTONS
 // glenda: update using function with parameter of object selected
@@ -387,25 +419,37 @@ function draw() {
 }
  
 // timer code
+// check if timer is running. if not, run it, else stop it first, clear??
+
 
 function countDown(secs,elem) {
-	var element = document.getElementById(elem);
-    var minutes = Math.ceil(secs / 60);
-    console.log(secs);
-	element.innerHTML = "time left: "+ minutes + " min";
-	if(secs < 1) {
-		clearTimeout(timer);
-		element.innerHTML = 'Done! Thank you for breathing with us.';
-        statusoverlay.classList.add('statusdone');
-        restartDone.style.display = 'block';
-        songplayed.stop();
-        return;
-	}
-	secs--;
-	var timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
-
+    if (timerRunning == true) {
+        clearTimeout(timer);
+        timerRunning = false;
+    } 
+    
+        var element = document.getElementById(elem);
+        var minutes = Math.ceil(secs / 60);
+        console.log(secs);
+	   element.innerHTML = minutes + " min left";
+	   if(secs < 1) {
+            clearTimeout(timer);
+            element.innerHTML = 'Done! Thank you for breathing with us.';
+            statusoverlay.classList.add('statusdone');
+            restartDone.style.display = 'block';
+            songplayed.stop();
+            return;
+	   }
+        secs--;
+        var timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
+        var timerRunning = true;
+        
+    
     
 }
+
+
+
 
 var status = document.querySelector('#status');
 var statusoverlay = document.querySelector('#statusoverlay');
