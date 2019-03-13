@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Breathely</title>
+    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1 id="generalReset">Breathely</h1> 
+        <h2>breathe with us</h2> 
+    </header>
+            
+    <section id="intro">
+        <p>Follow the sound and visuals to slow your breathing, calm your mind, and meditate. Customize your experience by changing the elements or dropping in your own media.</p>
+        <div id="enter" class="navbutton">Enter</div>
+    </section>
+    
+    <section id="settings">
+        <p>How long do you want to meditate?</p>
+        
+        <div id="customizetimer_intro" class="customizeradio">
+            <input type="radio" id="threemin_intro" name="timer" value="threemin" checked>
+            <label for="threemin_intro">3 min</label>
+            <input type="radio" id="fivemin_intro" name="timer" value="fivemin" checked>
+            <label for="fivemin_intro">5 min</label>
+            <input type="radio" id="tenmin_intro" name="timer" value="tenmin" checked>
+            <label for="tenmin_intro">10 min</label>
+            <input type="radio" id="twentymin_intro" name="timer" value="twentymin" checked>
+            <label for="twentymin_intro">20 min</label>
+        </div>
+        
+        <p>What sounds do you want to hear?</p>
+        <div id="customizesound_intro" class="customizeradio">
+            <input type="radio" id="rainfall_intro" name="sound" value="rainfall" checked>
+            <label for="rainfall_intro">rainfall</label>
+            <input type="radio" id="oceanwaves_intro" name="sound" value="oceanwaves">
+            <label for="oceanwaves_intro">ocean waves</label>
+            <input type="radio" id="summermeadow_intro" name="sound" value="summermeadow">
+            <label for="summermeadow_intro">summer meadow</label>
+            
+            <input type="radio" id="whitenoise_intro" name="sound" value="whitenoise" checked>
+            <label for="whitenoise_intro">white noise</label>
+            
+            <input type="radio" id="nosound_intro" name="sound" value="nosound" checked>
+            <label for="nosound_intro">none</label>
+        </div>
+        <div id="begin" class="navbutton">Begin</div>
+    </section>
+    
+    
+    <div id="mySketch"></div>
+    <div id="togglebutton">Pause</div>
+    
+    
+    <div id="info">
+        <p>&#9432;</p>
+    </div>
+    <div id="infodescription-overlay">
+        <div id="infoclose">&times;</div>
+        <div id="infodescription">
+            <h3>Breathly</h3>
+            <p>Breathly is an application that provides a meditative escape, especially for those facing stress and anxiety. Our everyday life is full of stressors, and we offer a safe space to transcend them. With meditative music such as sounds from nature or white noise to drown out the chaos of your surroundings, we invite you to breathe with us. Slow your breath, calm your mind, and meditate.</p>
+        </div>
+    
+    </div>
+    
+    <div id="customize">
+        <p>&#9776; &nbsp; Customize</p>
+    
+    </div>
+    
+    
+    <section id="customizemenu">
+        <h3>Time</h3>
+        <div id="customizetimer" class="customizeradio">
+            <input type="radio" id="threemin" name="timer" value="threemin" checked>
+            <label for="threemin">3 min</label>
+            <input type="radio" id="fivemin" name="timer" value="fivemin" checked>
+            <label for="fivemin">5 min</label>
+            <input type="radio" id="tenmin" name="timer" value="tenmin" checked>
+            <label for="tenmin">10 min</label>
+            <input type="radio" id="twentymin" name="timer" value="twentymin" checked>
+            <label for="twentymin">20 min</label>
+            
+            
+        </div>
+
+        <h3>Sound</h3>
+        <div id="customizesound" class="customizeradio">
+            <input type="radio" id="rainfall" name="sound" value="rainfall" checked>
+            <label for="rainfall">rainfall</label>
+            <input type="radio" id="oceanwaves" name="sound" value="oceanwaves">
+            <label for="oceanwaves">ocean waves</label>
+            <input type="radio" id="summermeadow" name="sound" value="summermeadow">
+            <label for="summermeadow">summer meadow</label>
+            <input type="radio" id="whitenoise" name="sound" value="whitenoise" checked>
+            <label for="whitenoise">white noise</label>
+            <input type="radio" id="nosound" name="sound" value="nosound" checked>
+            <label for="nosound">none</label>
+        </div>
+
+
+        <h3>Color</h3>
+        <div id="customizecolor" class="customizeradio">
+            <input type="radio" id="dark" name="color" value="dark" checked>
+            <label for="dark">default</label>
+            
+            <input type="radio" id="bluec" name="color" value="bluec" checked>
+            <label for="bluec">blue</label>
+            
+            <input type="radio" id="yellow" name="color" value="yellow" checked>
+            <label for="yellow">yellow</label>
+            
+            <input type="radio" id="black" name="color" value="black" checked>
+            <label for="black">black</label>
+
+        </div>
+
+    
+            <div id="customizeclose">&times;</div>
+    </section>
+    
+
+
+  
+    <div id="status" style="text-align: center"></div>
+
+    
+    
+    
+    
+    <footer class="pagefooter">
+        <a href="mailto:celinawleong@gmail.com">Email</a>
+        <a href="https://validator.w3.org/check?uri=referer" target="_blank">Valid HTML 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid CSS</a>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
