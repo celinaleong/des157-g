@@ -77,7 +77,7 @@ var duration;
 
 var threemin_intro = document.querySelector('#threemin_intro'); 
 threemin_intro.addEventListener('click', function() {
-    duration = .33*60; })
+    duration = 3*60; })
 var fivemin_intro = document.querySelector('#fivemin_intro'); 
 fivemin_intro.addEventListener('click', function() {
     duration = 5*60; })
@@ -90,12 +90,15 @@ twentymin_intro.addEventListener('click', function() {
 
 
 
+
+
+
 // doing the change time
 
 
 var threemin = document.querySelector('#threemin'); 
 threemin.addEventListener('click', function() {
-    duration = .33*60; 
+    duration = 3*60; 
     countDown(duration,'status');
 
 })
@@ -120,16 +123,15 @@ twentymin.addEventListener('click', function() {
 
 
 
-
-
-
 function toggleSong() {
   if (songplayed.isPlaying()) {
     songplayed.pause();
+    clearTimeout(timer);
     button.innerHTML = 'Play';
   } else {
     songplayed.play();
       button.innerHTML = 'Pause';
+      timer = setTimeout('countDown('+current_secs+',"'+'status'+'")', 1000);
   }
 }
 
@@ -397,11 +399,11 @@ function draw() {
     
 
     if (r >= 180) {
-        delta = -.4;
+        delta = -.37;
         word = "exhale";
     }
-    if (r <= 65) {
-        delta = .4;
+    if (r <= 78) {
+        delta = .37;
         word = "inhale";
     }
     r = r + delta;
@@ -420,7 +422,9 @@ function draw() {
  
 // timer code
 // check if timer is running. if not, run it, else stop it first, clear??
-
+var timer;
+var timerRunning = false;
+var current_secs;
 
 function countDown(secs,elem) {
     if (timerRunning == true) {
@@ -441,11 +445,9 @@ function countDown(secs,elem) {
             return;
 	   }
         secs--;
-        var timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
-        var timerRunning = true;
-        
-    
-    
+        timer = setTimeout('countDown('+secs+',"'+elem+'")', 1000);
+        current_secs = secs;
+        timerRunning = true;
 }
 
 
