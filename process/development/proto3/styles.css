@@ -157,8 +157,6 @@ h3 {
 }
 
 
-
-
 #settings {
     padding-top: 3em;
     width: 50%;
@@ -291,6 +289,7 @@ input:checked {
     text-align: left;
     width: 100%;
     margin: 20px 3px;
+    padding-left: 20px;
 }
 
 
@@ -298,7 +297,7 @@ input:checked {
     color: white;
     z-index: 10;
     margin: 0;
-    padding: 20em 20px;
+    padding-top: 20em;
     position: absolute;
     width: 100%;
     background: rgb(0,0,0,.75);

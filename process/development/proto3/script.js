@@ -77,7 +77,7 @@ var duration;
 
 var threemin_intro = document.querySelector('#threemin_intro'); 
 threemin_intro.addEventListener('click', function() {
-    duration = .33*60; })
+    duration = .5*60; })
 var fivemin_intro = document.querySelector('#fivemin_intro'); 
 fivemin_intro.addEventListener('click', function() {
     duration = 5*60; })
