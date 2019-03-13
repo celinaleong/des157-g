@@ -178,7 +178,7 @@ h3 {
     cursor:pointer;
 }
 
-#enter:hover, #begin:hover, , #restart:hover {
+#enter:hover, #begin:hover, #restartDone:hover {
     background: rgb(255,255,255,.2);
     transition: .3s;
     transform: scale(1.05);
@@ -203,12 +203,6 @@ h3 {
     transition: .3s;
 }
 
-/*
-#hamburger {
-    margin-right: 10px;
-
-}
-*/
 
 
 #customizemenu{
@@ -291,10 +285,12 @@ input:checked {
 
 
 /* status */
-#status {
-    margin-top: 30px;
-    text-align: center;
-    display: block;
+.statustime {
+    position: fixed;
+    bottom: 0;
+    text-align: left;
+    width: 100%;
+    margin: 20px 3px;
 }
 
 
@@ -302,18 +298,20 @@ input:checked {
     color: white;
     z-index: 10;
     margin: 0;
-    padding: 20em 20%;
+    padding: 20em 20px;
     position: absolute;
     width: 100%;
-    background: rgb(0,0,0,.8);
+    background: rgb(0,0,0,.75);
     top: 0;
     left: 0;
     height: 100%;
-    text-align: center;
+
+    
 }
 
 #restartDone {
     display: none;
+    margin-top: 80px;
 }
 
 
