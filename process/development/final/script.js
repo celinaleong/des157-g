@@ -372,7 +372,7 @@ function draw() {
         delta = -.37;
         word = "exhale";
     }
-    if (r <= 78) {
+    if (r <= 85) {
         delta = .37;
         word = "inhale";
     }
